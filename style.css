@@ -1,0 +1,172 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  background: powderblue;
+}
+
+input {
+  width: 20rem;
+  padding: 5px;
+  border: 2px solid blue;
+  border-bottom-left-radius: 10px;
+  color: blue;
+  overflow: scroll;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  gap: i0px;
+  margin-bottom: 20px;
+  margin-top: 2rem;
+}
+
+input:focus {
+  border-color: goldenrod;
+  outline: none;
+}
+.active {
+  font-family: "DM Sans", sans-serif;
+}
+
+#add-Task {
+  padding: 5px;
+  font-size: small;
+  width: 5rem;
+  background-color: rgb(77, 77, 235);
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  border: 0.5px solid blue;
+  border-top-right-radius: 10px;
+}
+
+#add-Task:hover {
+  background-color: blue;
+}
+
+#list-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7px;
+}
+
+.items {
+  color: indigo;
+}
+.btns {
+  font-size: x-small;
+  gap: 2rem;
+}
+#btn1 {
+  padding: 5px 10px;
+  font-size: x-small;
+  color: blue;
+  border: 0.5px solid blue;
+  margin-right: 5px;
+}
+
+#btn1:hover {
+  border: 0.5px solid goldenrod;
+  color: goldenrod;
+}
+
+#btn2 {
+  padding: 5px 10px;
+  font-size: x-small;
+  color: green;
+  border: 0.5px solid green;
+  margin-right: 5px;
+}
+#btn2:hover {
+  border: 0.5px solid goldenrod;
+  color: goldenrod;
+}
+
+#btn3 {
+  padding: 5px 10px;
+  font-size: x-small;
+  color: red;
+  border: 0.5px solid red;
+}
+#btn3:hover {
+  border: 0.5px solid goldenrod;
+  color: goldenrod;
+}
+
+#tasked {
+  color: indigo;
+  font-weight: 500;
+}
+
+.orderly {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  color: indigo;
+}
+#app {
+  font-family: "Pacifico", cursive;
+  font-weight: 600;
+  font-size: 2rem;
+  color: blue;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.reset {
+  padding: 5px 10px;
+  font-size: x-small;
+  color: red;
+  border: 0.5px solid red;
+  position: fixed;
+  top: 35rem;
+  right: 29.5rem;
+  background-color: white;
+}
+
+.reset:focus {
+  background-color: red;
+  color: white;
+}
+
+.reset:hover {
+  border: 0.5px solid goldenrod;
+  color: goldenrod;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 3rem;
+  }
+
+  input {
+    width: 15rem;
+    padding: 5px;
+  }
+
+  #add-Task {
+    width: 4rem;
+    padding: 6px;
+    font-size: x-small;
+  }
+
+  .reset {
+    top: 35rem;
+    right: 2.75rem;
+    /* padding: 6px 12px; */
+    font-size: x-small;
+  }
+}

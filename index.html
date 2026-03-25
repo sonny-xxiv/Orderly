@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do app</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="assets/orderly.jpg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <p id="app">OrderLy</p>
+    <p class="orderly">Welcome to OrderLy! One order at a time!</p>
+    <!-- To do container -->
+    <div class="active">
+      <form action="">
+        <input type="text" id="input-field" />
+        <button id="add-Task">Add tasks</button>
+      </form>
+
+      <!-- tasks -->
+      <div id="tasks-container"></div>
+    </div>
+
+    <button id="reset-btn" class="reset">Reset</button>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
